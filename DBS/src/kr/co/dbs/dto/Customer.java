@@ -4,11 +4,11 @@ public class Customer {
 	private int c_code;
 	private String m_name;
 	private String m_address;
-	private int m_phone;
+	private String m_phone;
 	private String c_mail;
 	private String c_name;
 	private String c_address;
-	private int c_phone;
+	private String c_phone;
 	private int c_weight;
 	private String c_goods;
 	private int c_goodsnumber;
@@ -33,10 +33,10 @@ public class Customer {
 	public void setM_address(String m_address) {
 		this.m_address = m_address;
 	}
-	public int getM_phone() {
+	public String getM_phone() {
 		return m_phone;
 	}
-	public void setM_phone(int m_phone) {
+	public void setM_phone(String m_phone) {
 		this.m_phone = m_phone;
 	}
 	public String getC_mail() {
@@ -57,10 +57,10 @@ public class Customer {
 	public void setC_address(String c_address) {
 		this.c_address = c_address;
 	}
-	public int getC_phone() {
+	public String getC_phone() {
 		return c_phone;
 	}
-	public void setC_phone(int c_phone) {
+	public void setC_phone(String c_phone) {
 		this.c_phone = c_phone;
 	}
 	public int getC_weight() {
@@ -99,6 +99,7 @@ public class Customer {
 	public void setC_payment(String c_payment) {
 		this.c_payment = c_payment;
 	}
+	
 	
 }
 	

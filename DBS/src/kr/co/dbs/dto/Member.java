@@ -6,7 +6,7 @@ public class Member {
 	private	String m_id;
 	private String m_pw;
 	private String m_address;
-	private	int m_phone;
+	private	String m_phone;
 	private	String m_email;
 	private	int m_bankAccount;
 	private	int m_cardNumber;
@@ -46,10 +46,10 @@ public class Member {
 	public void setM_address(String m_address) {
 		this.m_address = m_address;
 	}
-	public int getM_phone() {
+	public String getM_phone() {
 		return m_phone;
 	}
-	public void setM_phone(int m_phone) {
+	public void setM_phone(String m_phone) {
 		this.m_phone = m_phone;
 	}
 	public String getM_email() {
