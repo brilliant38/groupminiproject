@@ -1,0 +1,19 @@
+
+1.jsp페이지, 클래스명
+InsertMemberForm.jsp,java
+각 단어의 첫 문자는 대문자로 표기
+
+2.변수명
+String selectForUpdate = null;
+첫 단어를 제외한 두번째 단어부터 첫 문자는 대문자로 표기
+
+3.패키지명
+기존것으로 유지
+
+4.페이지 최상단에 항상 작성,수정일자 표기
+
+5.본인이 사용한 Database 내용 내보내기 해서 
+WebContent - WEB-INF - DB,Class 폴더 안에
+DBS-2018-07-04-LKJ와 같이 붙여넣기
+
+추가 사항 있으면 추가

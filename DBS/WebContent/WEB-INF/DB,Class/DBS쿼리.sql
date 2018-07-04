@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `check` (
   CONSTRAINT `FK_check_customer_3` FOREIGN KEY (`c_goods`) REFERENCES `customer` (`c_goods`),
   CONSTRAINT `FK_check_customer_4` FOREIGN KEY (`c_date`) REFERENCES `customer` (`c_date`),
   CONSTRAINT `FK_check_member` FOREIGN KEY (`m_name`) REFERENCES `member` (`m_name`)
+  ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=euckr;
 
 -- Dumping data for table dbs.check: ~0 rows (대략적)
@@ -70,6 +71,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
   CONSTRAINT `FK_customer_member` FOREIGN KEY (`m_name`) REFERENCES `member` (`m_name`),
   CONSTRAINT `FK_customer_member_2` FOREIGN KEY (`m_address`) REFERENCES `member` (`m_address`),
   CONSTRAINT `FK_customer_member_3` FOREIGN KEY (`m_phone`) REFERENCES `member` (`m_phone`)
+  ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=euckr;
 
 -- Dumping data for table dbs.customer: ~0 rows (대략적)
