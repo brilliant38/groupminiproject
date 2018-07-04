@@ -5,10 +5,11 @@ public class Customer {
 	private String m_name;
 	private String m_address;
 	private String m_phone;
-	private String c_mail;
+	private String c_localoverseas;
 	private String c_name;
 	private String c_address;
 	private String c_phone;
+	private String c_mail;
 	private int c_weight;
 	private String c_goods;
 	private int c_goodsnumber;
@@ -39,11 +40,11 @@ public class Customer {
 	public void setM_phone(String m_phone) {
 		this.m_phone = m_phone;
 	}
-	public String getC_mail() {
-		return c_mail;
+	public String getC_localoverseas() {
+		return c_localoverseas;
 	}
-	public void setC_mail(String c_mail) {
-		this.c_mail = c_mail;
+	public void setC_localoverseas(String c_localoverseas) {
+		this.c_localoverseas = c_localoverseas;
 	}
 	public String getC_name() {
 		return c_name;
@@ -62,6 +63,12 @@ public class Customer {
 	}
 	public void setC_phone(String c_phone) {
 		this.c_phone = c_phone;
+	}
+	public String getC_mail() {
+		return c_mail;
+	}
+	public void setC_mail(String c_mail) {
+		this.c_mail = c_mail;
 	}
 	public int getC_weight() {
 		return c_weight;
