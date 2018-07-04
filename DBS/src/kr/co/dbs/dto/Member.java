@@ -11,10 +11,11 @@ public class Member {
 	private	int m_bankAccount;
 	private	int m_cardNumber;
 	private	String m_gender;
-	private	String m_birthday;
+	private	String m_birthDay;
 	private	String m_boss;
 	private	String m_manager;
 	private	int m_companyNumber;
+	private String m_date;
 	public int getM_code() {
 		return m_code;
 	}
@@ -75,11 +76,11 @@ public class Member {
 	public void setM_gender(String m_gender) {
 		this.m_gender = m_gender;
 	}
-	public String getM_birthday() {
-		return m_birthday;
+	public String getM_birthDay() {
+		return m_birthDay;
 	}
-	public void setM_birthday(String m_birthday) {
-		this.m_birthday = m_birthday;
+	public void setM_birthDay(String m_birthDay) {
+		this.m_birthDay = m_birthDay;
 	}
 	public String getM_boss() {
 		return m_boss;
@@ -99,5 +100,12 @@ public class Member {
 	public void setM_companyNumber(int m_companyNumber) {
 		this.m_companyNumber = m_companyNumber;
 	}
+	public String getM_date() {
+		return m_date;
+	}
+	public void setM_date(String m_date) {
+		this.m_date = m_date;
+	}
+	
 }
 	
