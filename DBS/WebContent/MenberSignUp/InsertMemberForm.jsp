@@ -52,12 +52,9 @@
 </tr>
 <tr>
 	<td>생일</td>
-	<td><input type="text" name="m_birthDay" size="20"></td>
+	<td><input type="date" name="m_birthDay" size="20"></td>
 </tr>
-<tr>
-	<td>회사명</td>
-	<td><input type="text" name="m_date" size="20"></td>
-</tr>
+
 <tr>
 	<td>대표성함</td>
 	<td><input type="text" name="m_boss" size="20"></td>
