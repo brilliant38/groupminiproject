@@ -11,6 +11,7 @@ public class Company {
 	private String p_goods;
 	private String p_arrivingtime;
 	private String p_date;
+	private String p_accept;
 	public int getP_code() {
 		return p_code;
 	}
@@ -70,6 +71,12 @@ public class Company {
 	}
 	public void setP_date(String p_date) {
 		this.p_date = p_date;
+	}
+	public String getP_accept() {
+		return p_accept;
+	}
+	public void setP_accept(String p_accept) {
+		this.p_accept = p_accept;
 	}
 	
 	

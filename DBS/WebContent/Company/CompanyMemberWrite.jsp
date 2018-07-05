@@ -20,7 +20,6 @@
 			      <td class="col1">비밀번호</td>
 			      <td class="col2"><input type="password" name="pw"></td>
 			    </tr>
-			    
 			    <tr id="subject">
 			      <td class="col1">회사명</td>
 			      <td class="col2"><input type="text" name="companyName"></td>

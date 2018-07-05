@@ -84,18 +84,16 @@ public class MemberDao {
 			m.setM_phone(resultset.getString("m_phone"));
 			m.setM_address(resultset.getString("m_address"));
 			m.setM_email(resultset.getString("m_email"));
-			m.setM_bankAccount(resultset.getInt("m_bankAccount"));
-			m.setM_cardNumber(resultset.getInt("m_cardNumber"));
+			m.setM_bankAccount(resultset.getString("m_bankAccount"));
+			m.setM_cardNumber(resultset.getString("m_cardNumber"));
 			m.setM_gender(resultset.getString("m_gender"));
 			m.setM_birthDay(resultset.getString("m_birthDay"));
 			m.setM_boss(resultset.getString("m_boss"));
 			m.setM_manager(resultset.getString("m_manager"));
-			m.setM_companyNumber(resultset.getInt("m_companyNumber"));
+			m.setM_companyNumber(resultset.getString("m_companyNumber"));
 			m.setM_id(resultset.getString("m_id"));////Warning!!
 		}
 		return m;
-		
-		
 		
 	}
 	
@@ -109,13 +107,13 @@ public class MemberDao {
 		preparedStatement.setString(3, m.getM_phone());
 		preparedStatement.setString(4, m.getM_address());
 		preparedStatement.setString(5, m.getM_email());
-		preparedStatement.setInt(6, m.getM_bankAccount());
-		preparedStatement.setInt(7, m.getM_cardNumber());
+		preparedStatement.setString(6, m.getM_bankAccount());
+		preparedStatement.setString(7, m.getM_cardNumber());
 		preparedStatement.setString(8, m.getM_gender());
 		preparedStatement.setString(9, m.getM_birthDay());
 		preparedStatement.setString(10, m.getM_boss());
 		preparedStatement.setString(11, m.getM_manager());
-		preparedStatement.setInt(12, m.getM_companyNumber());
+		preparedStatement.setString(12, m.getM_companyNumber());
 		preparedStatement.setString(13, m.getM_id());
 		
 		preparedStatement.executeUpdate();
@@ -123,6 +121,7 @@ public class MemberDao {
 		preparedStatement.close();
 		connection.close();
 	}
+	
 	public void memberInsert(Member m) throws ClassNotFoundException, SQLException {
 		System.out.println("01 memberInsert체크");
 		DriverDB db = new DriverDB();
@@ -135,13 +134,13 @@ public class MemberDao {
 		preparedStatement.setString(4, m.getM_phone());
 		preparedStatement.setString(5, m.getM_address());
 		preparedStatement.setString(6, m.getM_email());
-		preparedStatement.setInt(7, m.getM_bankAccount());
-		preparedStatement.setInt(8, m.getM_cardNumber());
+		preparedStatement.setString(7, m.getM_bankAccount());
+		preparedStatement.setString(8, m.getM_cardNumber());
 		preparedStatement.setString(9, m.getM_gender());
 		preparedStatement.setString(10, m.getM_birthDay());
 		preparedStatement.setString(11, m.getM_boss());
 		preparedStatement.setString(12, m.getM_manager());
-		preparedStatement.setInt(13, m.getM_companyNumber());
+		preparedStatement.setString(13, m.getM_companyNumber());
 		
 		preparedStatement.executeUpdate();
 		

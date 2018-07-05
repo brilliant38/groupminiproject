@@ -6,8 +6,8 @@
 <jsp:useBean id="m" class="kr.co.dbs.dto.Member"/>
 <jsp:setProperty name="m" property="*"/>
 <%
-MemberDao memberdao = new MemberDao();
-memberdao.memberInsert(m);
-System.out.println(m.getM_id()+"<- mid");
-response.sendRedirect(request.getContextPath() + "/index.jsp");
+	MemberDao memberdao = new MemberDao();
+	memberdao.memberInsert(m);
+	System.out.println(m.getM_id()+"<- mid");
+	response.sendRedirect(request.getContextPath() + "/index.jsp");
 %>

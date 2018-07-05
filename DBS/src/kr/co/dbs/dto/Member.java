@@ -1,21 +1,28 @@
 package kr.co.dbs.dto;
 
 public class Member {
-	
+	private int m_code;
 	private	String m_name;
 	private	String m_id;
 	private String m_pw;
 	private String m_address;
 	private	String m_phone;
 	private	String m_email;
-	private	int m_bankAccount;//!
-	private	int m_cardNumber;	//!
+	private	String m_bankAccount;	//!
+	private	String m_cardNumber;	//!
 	private	String m_gender;
 	private	String m_birthDay;
 	private	String m_boss;
 	private	String m_manager;
-	private	int m_companyNumber;
+	private	String m_companyNumber;
 	private String m_date;
+	
+	public int getM_code() {
+		return m_code;
+	}
+	public void setM_code(int m_code) {
+		this.m_code = m_code;
+	}
 	public String getM_name() {
 		return m_name;
 	}
@@ -52,16 +59,16 @@ public class Member {
 	public void setM_email(String m_email) {
 		this.m_email = m_email;
 	}
-	public int getM_bankAccount() {
+	public String getM_bankAccount() {
 		return m_bankAccount;
 	}
-	public void setM_bankAccount(int m_bankAccount) {
+	public void setM_bankAccount(String m_bankAccount) {
 		this.m_bankAccount = m_bankAccount;
 	}
-	public int getM_cardNumber() {
+	public String getM_cardNumber() {
 		return m_cardNumber;
 	}
-	public void setM_cardNumber(int m_cardNumber) {
+	public void setM_cardNumber(String m_cardNumber) {
 		this.m_cardNumber = m_cardNumber;
 	}
 	public String getM_gender() {
@@ -88,10 +95,10 @@ public class Member {
 	public void setM_manager(String m_manager) {
 		this.m_manager = m_manager;
 	}
-	public int getM_companyNumber() {
+	public String getM_companyNumber() {
 		return m_companyNumber;
 	}
-	public void setM_companyNumber(int m_companyNumber) {
+	public void setM_companyNumber(String m_companyNumber) {
 		this.m_companyNumber = m_companyNumber;
 	}
 	public String getM_date() {
@@ -100,6 +107,8 @@ public class Member {
 	public void setM_date(String m_date) {
 		this.m_date = m_date;
 	}
+	
+	
 	
 }
 	
