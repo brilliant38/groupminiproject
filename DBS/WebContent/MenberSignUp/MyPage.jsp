@@ -1,12 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<meta charset="utf-8" />
+<title>자바스크립트</title>
+<script>
+var con_test = confirm("어떤 값이 나올까요. 확인을 눌러보세요.");
+if(con_test == true){
+  document.write("확인을 누르셨군요");
+}
+else if(con_test == false){
+  document.write("취소를 누르셨군요.");
+}
+</script>
 </head>
 <body>
-
 </body>
 </html>

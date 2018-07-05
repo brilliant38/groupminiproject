@@ -10,10 +10,6 @@
 <form action="../MenberSignUp/InsertMemberAction.jsp" method="post">
 <table border="1">
 <tr>
-	<td>코드</td>
-	<td><input type="text" name="m_code" size="20"></td>
-</tr>
-<tr>
 	<td>아이디</td>
 	<td><input type="text" name="m_id" size="20"></td>
 </tr>
@@ -63,6 +59,7 @@
 	<td>담당자성함</td>
 	<td><input type="text" name="m_manager" size="20"></td>
 </tr>
+
 <tr>
 	<td>사업자등륵번호</td>
 	<td><input type="text" name="m_companyNumber" size="20"></td>

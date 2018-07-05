@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<%@ page import = "kr.co.dbs.dao.MemberDao" %>
+<% 	request.setCharacterEncoding("euc-kr"); %>
+<jsp:useBean id="m" class="kr.co.dbs.dto.Member"/>
+<jsp:setProperty name="m" property="*"/>
+<% 
+ String mid = request.getParameter("m");
+MemberDao memberdao = new MemberDao();
+memberdao.memberUpdateSelect(mid);
+response.sendRedirect(request.getContextPath() + "../MenberSignUp/MyPage.jsp");
+%>

@@ -1,27 +1,21 @@
 package kr.co.dbs.dto;
 
 public class Member {
-	private int m_code;
+	
 	private	String m_name;
 	private	String m_id;
 	private String m_pw;
 	private String m_address;
 	private	String m_phone;
 	private	String m_email;
-	private	int m_bankAccount;
-	private	int m_cardNumber;
+	private	int m_bankAccount;//!
+	private	int m_cardNumber;	//!
 	private	String m_gender;
 	private	String m_birthDay;
 	private	String m_boss;
 	private	String m_manager;
 	private	int m_companyNumber;
 	private String m_date;
-	public int getM_code() {
-		return m_code;
-	}
-	public void setM_code(int m_code) {
-		this.m_code = m_code;
-	}
 	public String getM_name() {
 		return m_name;
 	}

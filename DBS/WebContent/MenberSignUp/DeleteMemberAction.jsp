@@ -7,5 +7,5 @@ String send_id = request.getParameter("send_id");
 System.out.println(send_id + "<-- send_id");
 MemberDao memberdao = new MemberDao();
 memberdao.memberDelete(send_id);
-response.sendRedirect(request.getContextPath() + "../MenberSignUp/MyPage.jsp");
+response.sendRedirect(request.getContextPath() + "../MenberSignUp/SearchMemberAction.jsp.jsp");
 %>

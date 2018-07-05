@@ -8,5 +8,6 @@
 <%
 MemberDao memberdao = new MemberDao();
 memberdao.memberInsert(m);
-response.sendRedirect(request.getContextPath() + "/MenberSignUp/MyPage.jsp");
+System.out.println(m.getM_id()+"<- mid");
+response.sendRedirect(request.getContextPath() + "/index.jsp");
 %>
