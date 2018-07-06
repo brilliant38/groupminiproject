@@ -61,7 +61,7 @@
 </tr>
 
 <tr>
-	<td>사업자등륵번호</td>
+	<td>사업자등록번호</td>
 	<td><input type="text" name="m_companyNumber" size="20"></td>
 </tr>
 <tr>
