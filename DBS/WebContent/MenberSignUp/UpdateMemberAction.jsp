@@ -5,8 +5,8 @@
 <jsp:useBean id="m" class="kr.co.dbs.dto.Member"/>
 <jsp:setProperty name="m" property="*"/>
 <% 
- String mid = request.getParameter("m");
 MemberDao memberdao = new MemberDao();
-memberdao.memberUpdateSelect(mid);
-response.sendRedirect(request.getContextPath() + "../MenberSignUp/MyPage.jsp");
+memberdao. memberUpdate(m);
+System.out.println(memberdao + "<-¿ï·ç·ç·ê");
+response.sendRedirect(request.getContextPath() + "/MenberSignUp/MyPage.jsp");
 %>

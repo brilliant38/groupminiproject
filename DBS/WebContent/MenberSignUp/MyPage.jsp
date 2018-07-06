@@ -1,19 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>자바스크립트</title>
-<script>
-var con_test = confirm("어떤 값이 나올까요. 확인을 눌러보세요.");
-if(con_test == true){
-  document.write("확인을 누르셨군요");
-}
-else if(con_test == false){
-  document.write("취소를 누르셨군요.");
-}
-</script>
-</head>
-<body>
-</body>
-</html>
+<h2>마이 페이지</h2>
+
+
+<a href="<%= request.getContextPath() %>/MenberSignUp/UpdateMemberForm.jsp">회원정보수정</a>
+<a href="<%= request.getContextPath() %>/MenberSignUp/DeleteMemberAction.jsp">회원정보삭제</a>
+<a href="<%= request.getContextPath() %>/MenberSignUp/SearchMemberForm.jsp">회원정보검색</a>
+	

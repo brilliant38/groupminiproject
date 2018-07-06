@@ -91,8 +91,11 @@ public class MemberDao {
 			m.setM_boss(resultset.getString("m_boss"));
 			m.setM_manager(resultset.getString("m_manager"));
 			m.setM_companyNumber(resultset.getInt("m_companyNumber"));
-			m.setM_id(resultset.getString("m_id"));////Warning!!
+			m.setM_id(resultset.getString("m_id"));
+			////Warning!!
 		}
+		preparedStatement.close();
+		connection.close();
 		return m;
 		
 		

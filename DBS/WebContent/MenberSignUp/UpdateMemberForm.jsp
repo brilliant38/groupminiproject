@@ -15,6 +15,7 @@ MemberDao memberdao = new MemberDao();
 Member m = memberdao.memberUpdateSelect(send_id);
 System.out.println(m+"<-m");
 String dbid = m.getM_id();
+System.out.print(dbid + "<-dbiddnfpfpfpfpfpf");
 String dbpw = m.getM_pw();
 String dbname = m.getM_name();
 String dbphone =m.getM_phone();
